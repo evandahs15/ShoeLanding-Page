@@ -343,3 +343,45 @@ hr {
   top: 0;
   width: 100%;
   left: 0; }
+
+#header {
+  background: url("../img/heroBackground.jpg") no-repeat;
+  background-size: cover;
+  height: 800px;
+  color: white;
+  text-align: center;
+  overflow: hidden; }
+
+h1 {
+  margin-bottom: 10px;
+  color: white;
+  text-transform: uppercase; }
+
+article {
+  width: 60%;
+  margin: 0 auto; }
+
+img {
+  width: 100%;
+  max-width: 500px; }
+
+.main-nav {
+  display: flex;
+  margin-top: 20px; }
+  .main-nav li {
+    list-style: none; }
+  .main-nav li:first-child {
+    margin-right: auto; }
+  .main-nav a {
+    display: block;
+    color: white;
+    border-radius: 4px;
+    padding: 10px 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 900; }
+
+a.download {
+  background: white;
+  color: #3A9FE4;
+  box-shadow: 0 12px 10px -10px rgba(0, 0, 0, 0.2); }
