@@ -1,19 +1,35 @@
 #header
   background:url("../img/heroBackground.jpg") no-repeat
   background-size: cover
+  background-position: center
   height: 800px
   color: white
   text-align: center
   overflow: hidden
+
+  @media only screen and (max-width: 680px)
+    height: 500px
+
+article
+  width: 60%
+  margin: 0 auto
+
+  @media only screen and (max-width: 680px)
+    width: 90%
 
 h1
   margin-bottom: 10px
   color: white
   text-transform: uppercase
 
-article
-  width: 60%
-  margin: 0 auto
+  @media only screen and (max-width: 680px)
+    margin-top: 60px
+
+p 
+  font-weight: 900
+  
+  @media only screen and (max-width: 680px)
+    margin-bottom: 60px
 
 
 img

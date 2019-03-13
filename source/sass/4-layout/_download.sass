@@ -1,10 +1,17 @@
 #download
   background: url("../img/downloadBackground.jpg") no-repeat
   background-size: cover
+  background-position: center
   color: white
   text-align: center
   padding: 100px 0
   margin-top: -70px
+
+  @media only screen and (max-width: 680px)
+      margin-top: 75px
+      padding: 60px
+      background: url("../img/downloadBackgroundSmall.jpg") no-repeat
+
   h2 
     font-size: 60px
     line-height: 1.05
@@ -12,8 +19,11 @@
     font-weight: 900
     color: white
     margin: 0 20px
+
+    @media only screen and (max-width: 680px)
+      font-size: 44px
   p 
-    wdith: 100%
+    width: 100%
     max-width: 450px
     margin: 20px auto
     font-weight: 900
@@ -22,6 +32,9 @@
     position: relative
     width: 200px
     margin: 0 15px
+    
+    @media only screen and (max-width: 680px)
+      margin: 10px 15px
   
   .apple:before, .google:before
     position: absolute

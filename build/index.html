@@ -20,7 +20,8 @@
       <article>
       <h1>Main Headline</h1>
       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse et voluptatem nisi sed officiis, explicabo error asperiores ipsa tempore non deserunt earum deleniti excepturi illum, minima voluptatum commodi? Ex, fugiat?</p>
-      <img src="assets/img/ShoeAppiOS.png" alt="shoeApp">
+      <img src="assets/img/ShoeAppiOS.png" 
+      srcset="assets/img/shoeAppiOS.png 2000w, assets/img/ShoeAppiOSSmall.png 1000w" alt="ShoeApp">
     </article>
     </div>
   </section>
@@ -65,7 +66,11 @@
   <section id="discount">
     <div class="wrapper">
       <div class="discountLayout">
-          <img src="assets/img/twoPhones.png" alt="Shoe App Rocks">
+          <picture>
+            <source media="(min-width: 681px" srcset="assets/img/twoPhones.png">
+            <source media="(max-width: 680px" srcset="assets/img/twoPhones-one.png">
+            <img src="assets/img/twoPhones.png" alt="Shoe App Rocks">
+          </picture>
         <div class="offer">
           <h2>Dont miss this offer</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, quas!</p>
