@@ -4,6 +4,7 @@
 
   li
     list-style: none 
+    display: inline-block
  
   a
     display: block 
@@ -26,3 +27,43 @@ a.download
   background: white
   color: $ocean
   box-shadow: 0 12px 10px -10px rgba(0,0,0,0.2)
+
+li.nav-toggle
+  display: none
+  a 
+    padding-right: 0
+
+
+//Responsive Nav Styles
+
+@media screen and (max-width: 750px)
+  li.nav-toggle
+    display: block
+    z-index: 100
+  .responsive-nav
+      display: none
+  .responsive-nav.unfold
+      display: block
+      width: 100%
+      background: #1f1f1f
+      position: absolute
+      top: 0
+      right: 0
+  .responsive-nav.unfold li
+    display: block
+  .responsive-nav.unfold a
+    padding: 60px
+    display: block
+    text-align: center
+  .responsive-nav.unfold a:hover
+    transform: translate(0)
+    color: $ocean
+  .responsive-nav.unfold a.download
+    background: inherit
+    color: white
+    margin-left: 0
+  .responsive-nav.unfold a.download:hover
+    color: $ocean
+
+
+  
