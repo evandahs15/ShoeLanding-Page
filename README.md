@@ -1,2 +1,2 @@
-# ShoeLanding-Page
-A shoelanding page tutorial by jesse showalter
+# Evandahs Portfolio
+A portfolio I am building showcasing all my design work
