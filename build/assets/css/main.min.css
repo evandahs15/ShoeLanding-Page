@@ -327,22 +327,49 @@ hr {
   margin: 10px 0 30px;
   height: 0; }
 
-.flex-video {
-  height: 0;
-  margin-bottom: 0.88889rem;
-  overflow: hidden;
-  padding-bottom: 56%;
+#features {
+  background: #E9E9E9;
+  text-align: center;
+  height: 500px;
   position: relative; }
+  #features:after {
+    bottom: 0;
+    position: absolute;
+    background: inherit;
+    content: " ";
+    height: 100%;
+    left: 0;
+    right: 0;
+    transform: skewY(-10deg);
+    transform-origin: 100%;
+    z-index: -1; }
 
-.flex-video iframe,
-.flex-video object,
-.flex-video embed,
-.flex-video video {
-  height: 100%;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  left: 0; }
+h2 {
+  margin: 100px; }
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 30px; }
+
+.featurecard {
+  background: white;
+  padding: 40px;
+  border-radius: 4px; }
+  .featurecard img {
+    width: auto; }
+
+h3 {
+  margin: 10px 0 0; }
+
+.car {
+  border-top: 3px solid #6EEE99; }
+
+.shoe {
+  border-top: 3px solid #BD10E0; }
+
+.phone {
+  border-top: 3px solid #3A9FE4; }
 
 #header {
   background: url("../img/heroBackground.jpg") no-repeat;
@@ -385,3 +412,17 @@ a.download {
   background: white;
   color: #3A9FE4;
   box-shadow: 0 12px 10px -10px rgba(0, 0, 0, 0.2); }
+
+#brands ul {
+  margin: 0;
+  padding: 20px 0;
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(6, auto); }
+  @media only screen and (max-width: 550px) {
+    #brands ul {
+      grid-template-columns: repeat(3, auto); } }
+  #brands ul li {
+    list-style: none; }
+  #brands ul li image {
+    width: 100%; }
