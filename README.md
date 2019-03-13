@@ -1,2 +1,2 @@
-# Evandahs Portfolio
-A portfolio I am building showcasing all my design work
+# ShoeLanding page
+A show app landing page tutorial from jesse showalter
