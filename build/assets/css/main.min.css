@@ -386,9 +386,37 @@ h3 {
   border-top: 3px solid #3A9FE4; }
 
 #download {
-  background: #BD10E0;
+  background: url("../img/downloadBackground.jpg") no-repeat;
+  background-size: cover;
+  color: white;
+  text-align: center;
   padding: 100px 0;
   margin-top: -70px; }
+  #download h2 {
+    font-size: 60px;
+    line-height: 1.05;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: white;
+    margin: 0 20px; }
+  #download p {
+    wdith: 100%;
+    max-width: 450px;
+    margin: 20px auto;
+    font-weight: 900; }
+  #download .button {
+    position: relative;
+    width: 200px;
+    margin: 0 15px; }
+  #download .apple:before, #download .google:before {
+    position: absolute;
+    display: block;
+    left: 20px;
+    top: 20px; }
+  #download .apple:before {
+    content: url("../img/appleicon.png"); }
+  #download .google:before {
+    content: url("../img/playicon.png"); }
 
 #header {
   background: url("../img/heroBackground.jpg") no-repeat;
